@@ -150,22 +150,19 @@ def event_handle(event,json_line):
     if msgType == "text":       
         msg = str(event["message"]["text"])
         if msg == "คณิต":
-            replyObj = TextSendMessage(text="ลิ้งค์")
+            replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PLmxYBEigCE--IRRs95a-50ArfKX_SSKin")
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "อังกฤษ":
-            replyObj = TextSendMessage(text="ลิ้งค์")
+            replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PL9h7pMHLKnrD7G6vT6JjUAGlQAo-ncIqz")
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "ชีว":
-            replyObj = TextSendMessage(text="ลิ้งค์")
+            replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PLdmacMz7jD9YZt4_KMgqzf7INIAEtY_Sc")
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "เคมี":
-            replyObj = TextSendMessage(text="ลิ้งค์")
+            replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PLQysVMMSRPjFlRCgNJcSYg4iY1TBzZXSH")
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "ฟิสิกส์":
-            replyObj = TextSendMessage(text="ลิ้งค์")
-            line_bot_api.reply_message(rtoken,replyObj)
-        elif msg == "สวัสดี":
-            replyObj = TextSendMessage(text="ลิ้งค์")
+            replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PLAg8eZG-P-qhHnYAhbkTEtMIkGRsiU90p")
             line_bot_api.reply_message(rtoken,replyObj)
         else :   
             headers = request.headers
