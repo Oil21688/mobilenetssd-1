@@ -165,11 +165,7 @@ def event_handle(event,json_line):
             replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PLAg8eZG-P-qhHnYAhbkTEtMIkGRsiU90p")
             line_bot_api.reply_message(rtoken,replyObj)
         else :   
-            headers = request.headers
-            json_headers = ({k:v for k, v in headers.items()})
-            json_headers.update({'Host':'bots.dialogflow.com'})
-            url = ""
-            requests.post(url,data=json_line, headers=json_headers)
+           
     elif msgType == "image":
         try:
             message_content = line_bot_api.get_message_content(event['message']['id'])
