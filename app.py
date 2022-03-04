@@ -155,6 +155,18 @@ def event_handle(event,json_line):
         elif msg == "อังกฤษ":
             replyObj = TextSendMessage(text="ลิ้งค์")
             line_bot_api.reply_message(rtoken,replyObj)
+        elif msg == "ชีว":
+            replyObj = TextSendMessage(text="ลิ้งค์")
+            line_bot_api.reply_message(rtoken,replyObj)
+        elif msg == "เคมี":
+            replyObj = TextSendMessage(text="ลิ้งค์")
+            line_bot_api.reply_message(rtoken,replyObj)
+        elif msg == "ฟิสิกส์":
+            replyObj = TextSendMessage(text="ลิ้งค์")
+            line_bot_api.reply_message(rtoken,replyObj)
+        elif msg == "สวัสดี":
+            replyObj = TextSendMessage(text="ลิ้งค์")
+            line_bot_api.reply_message(rtoken,replyObj)
         else :   
             headers = request.headers
             json_headers = ({k:v for k, v in headers.items()})
