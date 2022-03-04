@@ -155,7 +155,7 @@ def event_handle(event,json_line):
         elif msg == "อังกฤษ":
             replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PL9h7pMHLKnrD7G6vT6JjUAGlQAo-ncIqz")
             line_bot_api.reply_message(rtoken,replyObj)
-        elif msg == "ชีว":
+        elif msg == "ชีวะ":
             replyObj = TextSendMessage(text="https://www.youtube.com/playlist?list=PLdmacMz7jD9YZt4_KMgqzf7INIAEtY_Sc")
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "เคมี":
